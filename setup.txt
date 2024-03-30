@@ -1,0 +1,5 @@
+flask
+torch
+diffusers
+transformers
+accelerate

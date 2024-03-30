@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mì AI Text 2 Image</title>
+</head>
+
+<body>
+    <style>
+
+        button {
+            border: none;
+            background-color:orange;
+            color: white;
+            padding: 10px 22px;
+            text-align: center;
+            display: inline-block;
+            font-size: 18px;
+            margin: 4px 2px;
+        }
+
+        body {
+            font-family: Arial;
+            text-align:center;
+            color:white;
+            background-color:black;
+        }
+    </style>
+
+    <h1>Mì AI Text-2-Image Demo</h1>
+    <br>
+
+    <form action="/" method="post">
+        <div class="myDiv">
+            <p>Nhập text vào đây để gen ra ảnh nhé: </p>
+            <textarea name="prompt" rows="3" cols="50" style="font-size: 16pt"></textarea>
+        </div>
+        <br>
+
+        <div class="myDiv">
+            <button>Gen ảnh nào</button>
+        </div>
+        {% if image_url is defined %}
+        <div>
+        <img src="{{ image_url }}" />
+        </div>
+        {% endif%}
+    </form>
+    <br>
+
+</body>
